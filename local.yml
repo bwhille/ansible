@@ -4,12 +4,9 @@
   become: true
 
   tasks:
-  - name: update cache
-    apt:
-      update_cache=yes
+    - name: update cache
+      apt: update_cache=yes
 
-  - name: install git
-    package:
-      name: git
-
-  
+    - name: install git
+      package:
+        name: git
